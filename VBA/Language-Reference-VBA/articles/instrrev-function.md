@@ -11,23 +11,23 @@ ms.date: 06/08/2017
 
 # InStrRev Function
 
-
-
- **Description**
+### Description
 Returns the position of an occurrence of one string within another, from the end of string.
- **Syntax**
- **InstrRev( _stringcheck_,** **_stringmatch_** [ **,** **_start_** [ **,** **_compare_** ]] **)**
-The  **InstrRev** function syntax has these[named arguments](vbe-glossary.md):
 
+### Syntax
+InStrRev ( *stringcheck*, *stringmatch*, [ , *start* [ , *compare*] ] )
+
+The **InStrRev** function syntax has these [named arguments](vbe-glossary.md):
 
 |**Part**|**Description**|
 |:-----|:-----|
 |**_stringcheck_**|Required. [String expression](vbe-glossary.md) being searched.|
 |**_stringmatch_**|Required. String expression being searched for.|
-|**_start_**|Optional. [Numeric expression](vbe-glossary.md) that sets the starting position for each search. If omitted, -1 is used, which means that the search begins at the last character position. If **_start_** contains[Null](vbe-glossary.md), an error occurs.|
+|**_start_**|Optional. [Numeric expression](vbe-glossary.md) that sets the starting position for each search. If omitted, -1 is used, which means that the search begins at the last character position. If **_start_** contains [Null](vbe-glossary.md), an error occurs.|
 |**_compare_**|Optional. Numeric value indicating the kind of comparison to use when evaluating substrings. If omitted, a binary comparison is performed. See Settings section for values.|
- **Settings**
-The  **_compare_** argument can have the following values:
+
+### Settings
+The *compare* argument can have the following values:
 
 
 |**Constant**|**Value**|**Description**|
@@ -36,9 +36,9 @@ The  **_compare_** argument can have the following values:
 |**vbBinaryCompare**| 0|Performs a binary comparison.|
 |**vbTextCompare**| 1|Performs a textual comparison.|
 |**vbDatabaseCompare**| 2|Microsoft Access only. Performs a comparison based on information in your database.|
- **Return Values**
- **InStrRev** returns the following values:
 
+### Return Values
+**InStrRev** returns the following values:
 
 |**If**|**InStrRev returns**|
 |:-----|:-----|
@@ -49,6 +49,7 @@ The  **_compare_** argument can have the following values:
 |**_stringmatch_** is not found|0|
 |**_stringmatch_** is found within **_stringcheck_**|Position at which match is found|
 |**_start_** > **Len( _stringmatch_ )**|0|
- **Remarks**
-Note that the syntax for the  **InstrRev** function is not the same as the syntax for the **Instr** function.
+
+### Remarks
+Note that the syntax for the **InStrRev** function is not the same as the syntax for the **InStr** function.
 
