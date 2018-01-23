@@ -13,14 +13,14 @@ ms.date: 06/08/2017
 
 Changes the current directory or folder.
 
- **Syntax**
+#### Syntax
 
- **ChDir**_path_
+ **ChDir** _path_
 
-The required  _path_[argument](vbe-glossary.md) is a[string expression](vbe-glossary.md) that identifies which directory or folder becomes the new default directory or folder. The _path_ may include the drive. If no drive is specified, **ChDir** changes the default directory or folder on the current drive.
+The required _path_[argument](vbe-glossary.md) is a [string expression](vbe-glossary.md) that identifies which directory or folder becomes the new default directory or folder. The _path_ may include the drive. If no drive is specified, **ChDir** changes the default directory or folder on the current drive.  
+
  **Remarks**
-The  **ChDir** statement changes the default directory but not the default drive. For example, if the default drive is C, the following statement changes the default directory on drive D, but C remains the default drive:
-
+The **ChDir** statement changes the default directory but not the default drive. For example, if the default drive is C, the following statement changes the default directory on drive D, but C remains the default drive:
 
 
 ```
@@ -31,21 +31,17 @@ ChDir "D:\TMP"
 On the Power Macintosh, the default drive always changes to the drive specified in  _path_. Full path specifications begin with the volume name, and relative paths begin with a colon ( **:** ). **ChDir** resolves any aliases specified in the path:
 
 
-
 ```
 ChDir "MacDrive:Tmp" ' On the Macintosh. 
 
 ```
-
 Note that when making relative directory changes, different symbols are used in Microsoft Windows and on the Macintosh:
-
 
 
 ```
 ChDir ".." ' Moves up one directory in Microsoft Windows. 
 ChDir "::" ' Moves up one directory on the Macintosh.
 ```
-
 
 ## Example
 
@@ -61,5 +57,4 @@ ChDir "MYDIR"
 ChDir "D:\WINDOWS\SYSTEM" 
 
 ```
-
 
